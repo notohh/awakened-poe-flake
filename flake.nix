@@ -25,6 +25,7 @@
             name = "flake";
             packages = with pkgs; [
               statix
+              just
               gh-markdown-preview
             ];
           };
