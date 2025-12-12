@@ -8,7 +8,7 @@
 }:
 let
   pname = "exiled-exchange-2";
-  version = "0.12.8";
+  version = "0.13.0";
   icon = fetchurl {
     url = "https://github.com/Kvan7/Exiled-Exchange-2/raw/master/renderer/public/images/jeweler.png";
     sha256 = "sha256-30GXskIwOQ4m1a6dcm7MXVwlHsYvQ+SnavEGTKHqHUo=";
@@ -26,7 +26,7 @@ appimageTools.wrapType2 {
   inherit pname version;
   src = fetchurl {
     url = "https://github.com/Kvan7/Exiled-Exchange-2/releases/download/v${version}/Exiled-Exchange-2-${version}.AppImage";
-    hash = "sha256-hGUmwyhFsM+8XTrFCuaLVYAA85jwrKCftkQ/wlViRHI=";
+    hash = "sha256-9AI3HhoEYiCNoeDl5IPgnqCa1CJF4vowgVx05dVw57M=";
   };
 
   extraInstallCommands = ''
