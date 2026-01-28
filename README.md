@@ -43,5 +43,27 @@ then call the package
     # <package> being either awakened-poe-trade or exiled-exchange-2
   ];
 ```
+### hyprland windowrules
+proper windowrules to get apt/ee2 playing nice on hyprland will look something like this:
 
+```
+  tag +poe, match:class ^(steam_app_238960|steam_app_2694490)
+  tag +apt, match:title ^(Awakened PoE Trade|Exiled Exchange 2)$
+
+  fullscreen on, match:tag poe
+  monitor DP-1, match:tag poe
+
+  float on, match:tag apt
+  no_blur on, match:tag apt
+  no_anim on, match:tag apt
+  no_shadow on, match:tag apt
+  no_focus on, match:tag apt
+  no_initial_focus on, match:tag apt
+  center on, match:tag apt
+  monitor DP-1, match:tag apt
+  pin on, match:tag apt
+  render_unfocused on, match:tag apt
+  size 100% 100%, match:tag apt
+```
+these rules *generally* work alright, although its still relatively buggy sometimes, especially when trying to interact with the overlays. open an issue if you have any suggested rules to make it play a bit nicer.
 
